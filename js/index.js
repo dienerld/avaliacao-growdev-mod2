@@ -1,16 +1,37 @@
+const session = localStorage.getItem('session');
+let logged = sessionStorage.getItem('logged');
 const qSelect = (select) => document.querySelector(select);
 
-const login = () => {
-  const username = qSelect('#input-username').value;
-  const password = qSelect('#input-password').value;
+checkLogged();
 
-  const user = JSON.parse(localStorage.getItem(username));
+const login = () => {
+  const form = qSelect('#form');
+
+  const user = JSON.parse(localStorage.getItem(form.username.value));
   if (!user) {
     alert('Login or Password Invalid');
     return;
   }
-  if (!(password === user.password)) {
+  if (!(form.password.value === user.password)) {
     alert('Login or Password Invalid');
     return;
   }
+  saveSession(form.username.value);
+  window.location = '../home.html';
 };
+
+function saveSession(data) {
+  sessionStorage.setItem('logged', data);
+}
+
+function checkLogged() {
+  if (session) {
+    sessionStorage.setItem('logged', session);
+    logged = session;
+  }
+
+  if (logged) {
+    saveSession(logged, session);
+    window.location.href = 'home.html';
+  }
+}

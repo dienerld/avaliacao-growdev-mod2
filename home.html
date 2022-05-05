@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus Recados</title>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Meus Recados</h1>
+    </header>
+    <main>
+      <div class="header-bar">
+        <form id="form-message">
+          <input type="text" name="message" placeholder="Descrição" />
+          <input type="text" name="details" placeholder="Detalhamento" />
+          <button type="button" onclick="">Salvar</button>
+        </form>
+      </div>
+
+      <table>
+        <thead class="table-head">
+          <th class="table-id">#</th>
+          <th class="table-description">Descrição</th>
+          <th class="table-details">Detalhamento</th>
+          <th class="table-buttons">Ação</th>
+        </thead>
+        <tbody>
+          <tr class="line">
+            <td class="table-id">1</td>
+            <td class="table-description">aaa</td>
+            <td class="table-details">bbbb</td>
+            <td class="table-buttons">
+              <button class="btn-delete">Apagar</button>
+              <button class="btn-edit">Editar</button>
+            </td>
+          </tr>
+          <tr class="line">
+            <td class="table-id">1</td>
+            <td class="table-description">aaa</td>
+            <td class="table-details">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus voluptates iste itaque dolorum sequi quod neque autem
+              deleniti molestiae ducimus? Magnam, animi, iste nulla quasi
+              aliquid laudantium laborum esse eligendi veniam similique
+              consequuntur laboriosam saepe. Exercitationem beatae facere
+              consectetur similique!
+            </td>
+            <td class="table-buttons">
+              <button class="btn-delete">Apagar</button>
+              <button class="btn-edit">Editar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script src="./js/home.js"></script>
+  </body>
+</html>

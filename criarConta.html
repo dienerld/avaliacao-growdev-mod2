@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,27 +21,33 @@
         <img src="./images/home.jpg" alt="" />
       </section>
 
-      <section class="form">
+      <form id="form">
         <div id="title"><h1>CRIAR CONTA</h1></div>
         <div class="inputs">
           <input
             id="input-username"
             type="text"
             placeholder="User name"
-            name="user"
+            name="username"
           />
-          <input id="input-password" type="password" placeholder="Password" />
+          <input
+            name="password"
+            id="input-password"
+            type="password"
+            placeholder="Password"
+          />
           <input
             id="repeat-password"
+            name="password-repeat"
             type="password"
             placeholder="Repeat Password"
           />
         </div>
-        <button id="btn-create-account" onclick="createAccount()">
+        <button type="button" id="btn-create-account" onclick="createAccount()">
           SIGN UP
         </button>
         <a id="link" href="./index.html">SIGN IN</a>
-      </section>
+      </form>
     </div>
 
     <script src="./js/createAccount.js"></script>
