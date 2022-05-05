@@ -5,6 +5,8 @@
 body {
   width: 100vw;
   height: 100vh;
+  background-color: #191a1a;
+  color: #fff;
   font-family: roboto, sans-serif;
 }
 
@@ -44,12 +46,17 @@ body {
 }
 
 .inputs > input {
-  font-size: 20px;
-  border: 1px #d3d3d3 solid;
+  font-size: 16px;
+  padding: 4px;
+  border: 1px #949494 solid;
   border-radius: 4px;
   margin-bottom: 8px;
+  background-color: #3b3b3b;
+  color: #fff;
 }
+
 .inputs > input:focus {
+  background-color: #3b3b3b;
   outline: none;
 }
 
@@ -71,6 +78,7 @@ body {
   border-radius: 4px;
   width: 100%;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 #link {

@@ -17,7 +17,7 @@
         <form id="form-message">
           <input type="text" name="message" placeholder="Descrição" />
           <input type="text" name="details" placeholder="Detalhamento" />
-          <button type="button" onclick="">Salvar</button>
+          <button type="button" onclick="saveMessage()">Salvar</button>
         </form>
       </div>
 
@@ -28,33 +28,7 @@
           <th class="table-details">Detalhamento</th>
           <th class="table-buttons">Ação</th>
         </thead>
-        <tbody>
-          <tr class="line">
-            <td class="table-id">1</td>
-            <td class="table-description">aaa</td>
-            <td class="table-details">bbbb</td>
-            <td class="table-buttons">
-              <button class="btn-delete">Apagar</button>
-              <button class="btn-edit">Editar</button>
-            </td>
-          </tr>
-          <tr class="line">
-            <td class="table-id">1</td>
-            <td class="table-description">aaa</td>
-            <td class="table-details">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus voluptates iste itaque dolorum sequi quod neque autem
-              deleniti molestiae ducimus? Magnam, animi, iste nulla quasi
-              aliquid laudantium laborum esse eligendi veniam similique
-              consequuntur laboriosam saepe. Exercitationem beatae facere
-              consectetur similique!
-            </td>
-            <td class="table-buttons">
-              <button class="btn-delete">Apagar</button>
-              <button class="btn-edit">Editar</button>
-            </td>
-          </tr>
-        </tbody>
+        <tbody id="table-body"></tbody>
       </table>
     </main>
 

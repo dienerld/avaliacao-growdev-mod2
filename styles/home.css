@@ -18,36 +18,43 @@ main {
   align-items: center;
 }
 
+.header-bar {
+  padding-top: 32px;
+}
 #form-message {
   display: flex;
   flex-direction: row;
 }
 
 #form-message > input {
+  color: #fff;
   font-size: 16px;
   padding: 8px;
+  width: 30vw;
   outline: 0;
   border: 0;
   border-radius: 4px;
+  background-color: #3b3b3b;
 }
+
 #form-message :first-child {
-  margin-right: 8px;
+  margin-right: 24px;
 }
 
 #form-message > button {
   font-size: 18px;
   margin-left: -4px;
   padding: 8px;
-  background-color: #4242d4;
+  background-color: #23239b;
+  color: #fff;
   border: none;
-
+  cursor: pointer;
   border-radius: 0 4px 4px 0;
 }
 
 table {
   margin-top: 24px;
   width: 100%;
-  /* border: 2px solid red; */
   border-collapse: collapse;
 }
 
@@ -61,28 +68,34 @@ table {
 
 .line {
   height: 48px;
-  border-top: 1px solid #cccc;
+  border-top: 1px solid #585756;
 }
 
 .table-id {
   width: 10%;
 }
+
 .table-buttons {
-  width: 20%;
+  width: 15%;
 }
 
 .table-buttons > button {
   padding: 8px;
   border: 0;
+  color: #fff;
   border-radius: 4px;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .btn-edit {
-  background-color: #39e03e;
+  background-color: #1aa33f;
 }
 
 .btn-delete {
-  background-color: #dd1515;
+  background-color: #b11111;
 }
 
 .table-description,
