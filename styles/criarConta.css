@@ -1,0 +1,10 @@
+.inputs {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.inputs > input {
+  margin-bottom: 24px;
+}

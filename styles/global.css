@@ -1,0 +1,78 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: roboto, sans-serif;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.esquerda {
+  height: 100%;
+  width: 40%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 16px;
+}
+
+#titulo {
+  margin-bottom: 24px;
+}
+.esquerda > img {
+  width: 80%;
+  height: 50%;
+}
+
+.form {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs > input {
+  font-size: 24px;
+  border: 1px #d3d3d3 solid;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.inputs > input:focus {
+  outline: none;
+}
+
+.inputs > input::placeholder {
+  padding-left: 16px;
+}
+
+.inputs {
+  margin-bottom: 24px;
+}
+
+#btn-login,
+#btn-create-account {
+  font-size: 16px;
+  background-color: #4bb354;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#link {
+  color: #4bb354;
+  text-decoration: none;
+  font-size: 16px;
+}
