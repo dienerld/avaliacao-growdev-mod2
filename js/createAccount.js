@@ -1,5 +1,4 @@
 const qSelect = (select) => document.querySelector(select);
-const form_blank = qSelect('#form');
 
 const createAccount = () => {
   const form = qSelect('#form');
@@ -22,8 +21,11 @@ const createAccount = () => {
           messages: [],
         })
       );
+    } else {
+      alert('User Already Registered');
     }
   }
 
-  form.innerHTML = form_blank.innerHTML;
+  form.reset();
+  // window.href = './home.html';
 };

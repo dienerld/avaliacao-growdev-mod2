@@ -1,15 +1,10 @@
-const session = localStorage.getItem('session');
 let logged = sessionStorage.getItem('logged');
+
 let user = undefined;
 let isEdit = false;
 let IdEdit = undefined;
 
 function checkLogged() {
-  if (session) {
-    sessionStorage.setItem('logged', session);
-    logged = session;
-  }
-
   if (!logged) {
     window.location.href = './index.html';
     return;
@@ -48,6 +43,7 @@ function saveMessage() {
     description: formMessage.message.value,
     details: formMessage.details.value,
   };
+
   if (isEdit) {
     user.messages[IdEdit] = message;
     isEdit = false;
@@ -55,6 +51,7 @@ function saveMessage() {
   } else {
     user.messages.push(message);
   }
+
   localStorage.setItem(user.username, JSON.stringify(user));
   printMessages();
   formMessage.reset();
