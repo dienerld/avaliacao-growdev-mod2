@@ -3,9 +3,29 @@ body {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#logout {
+  margin: 32px 24px 0 0;
+  font-size: 32px;
+
+  cursor: pointer;
+  background: #3b3b3b;
+  border-radius: 10%;
+  border: none;
+}
+#logout > i {
+  padding: 4px;
+}
+
 h1 {
-  padding-top: 32px;
+  padding: 32px 0 0 32px;
   text-align: center;
+  width: 100%;
 }
 
 main {

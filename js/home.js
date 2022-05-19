@@ -79,5 +79,10 @@ function editMessage(index) {
   IdEdit = index;
 }
 
+function logout() {
+  sessionStorage.clear();
+  window.location.href = './index.html';
+}
+
 checkLogged();
 printMessages();
