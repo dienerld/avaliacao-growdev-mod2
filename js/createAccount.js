@@ -11,7 +11,15 @@ const createAccount = () => {
 
   if (user) {
     alert('User Already Registered');
-  } else {
+    return;
+  }
+  if (
+    !(
+      form.username.value === '' ||
+      form.password.value === '' ||
+      form['password-repeat'].value === ''
+    )
+  ) {
     if (verifyPassword(form.password.value, form['password-repeat'].value)) {
       localStorage.setItem(
         form.username.value,
@@ -21,11 +29,12 @@ const createAccount = () => {
           messages: [],
         })
       );
+      window.location.href = 'home.html';
+      return;
     } else {
-      alert('User Already Registered');
+      alert('Passwords does not match');
     }
+  } else {
+    alert('Not accept blank user');
   }
-
-  form.reset();
-  // window.href = './home.html';
 };

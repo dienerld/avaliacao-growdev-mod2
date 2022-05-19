@@ -39,9 +39,17 @@ function printMessages() {
 
 function saveMessage() {
   const formMessage = document.getElementById('form-message');
+  const description = formMessage.message.value;
+  const details = formMessage.details.value;
+
+  if (!details || !description) {
+    alert('Preencha todos os campos');
+    return;
+  }
+
   const message = {
-    description: formMessage.message.value,
-    details: formMessage.details.value,
+    description,
+    details,
   };
 
   if (isEdit) {
